@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+
+<body>
+  <main>
+    <section>
+      {{#if winningCondition}}
+        <h1>Congratulations! You've won with {{guessesLeft}} guesses left!</h1>
+      {{else}}
+        <h1>Sad day, you ran out of guesses.</h1>
+      {{/if}}
+      <p>The word was {{word}}!</p>
+      <p>No idea what {{word}} means? <a href="http://www.dictionary.com/browse/{{word}}?s=t">No problem, lets look it up!</a></p>
+      <p>I could also look it up snarkily for you! <a href="http://lmgtfy.com/?q=define+{{word}}">Because you may not be too good with the Googles.</a></p>
+
+      <a href="/">
+        <div id="replay">
+          <p>Want to play again?</p>
+          <p>Click here</p>
+        </div>
+      </a>
+    </section>
+  </main>
+</body>
+
+</html>

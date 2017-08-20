@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#badGuesses > h3 {
+  font-size: 3vw;
+  text-transform: uppercase;
+}
+
+body {
+  background-color: lightblue;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  padding: 2rem;
+}
+
+#hiddenWord > h1 {
+  font-size: 5vw;
+  text-transform: uppercase;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+main > section {
+  border: 1px solid blue;
+  border-radius: 3em;
+  min-width: 50vw;
+  max-width: 75vw;
+  min-height: 60vh;
+  min-height: 600px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#replay {
+  padding: .75em 2em;
+  border: solid 2px blue;
+  border-radius: 1em;
+  text-align: center;
+}
